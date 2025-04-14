@@ -1,45 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShaanCre8sArt</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShaanCre8sArt</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4ff; }
+        header, section, footer { padding: 40px 20px; text-align: center; }
+        h1, h2 { color: #003366; }
+        .artworks, .instagram { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .artwork, iframe { max-width: 300px; width: 100%; height: auto; }
+        .contact a { display: block; margin: 10px 0; color: #0077cc; text-decoration: none; }
+        iframe.snapwidget-widget { width: 100%; border: none; overflow: hidden; }
+    </style>
 </head>
 <body>
-  <header id="home" data-aos="fade-down">
+
+<header>
     <h1>Welcome to ShaanCre8sArt</h1>
-    <p>Featured Artworks Below</p>
-  </header>
+    <p>Bold, expressive, and vibrant fine art</p>
+</header>
 
-  <section id="about" data-aos="fade-right">
+<section id="about">
     <h2>About Me</h2>
-    <p>I’m Shaan, a traditional fine artist creating custom drawings and paintings.</p>
-  </section>
+    <p>Hi! I'm Shaan, a traditional fine artist who specializes in drawings and paintings. I take custom commissions and love bringing ideas to life on canvas and paper.</p>
+</section>
 
-  <section id="artworks" data-aos="zoom-in">
+<section id="artworks">
     <h2>Artworks</h2>
-    <div class="gallery">
-      <div class="art-card">Drawing 1</div>
-      <div class="art-card">Painting 1</div>
+    <div class="artworks">
+        <div class="artwork"><img src="https://via.placeholder.com/250" alt="Artwork 1"></div>
+        <div class="artwork"><img src="https://via.placeholder.com/250" alt="Artwork 2"></div>
+        <div class="artwork"><img src="https://via.placeholder.com/250" alt="Artwork 3"></div>
     </div>
-  </section>
+</section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact / COA</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Describe your custom artwork request"></textarea>
-      <button type="submit">Send Request</button>
-    </form>
-    <p>WhatsApp | Instagram: @shaancre8sart | Email: shaan@email.com</p>
-  </section>
+<section id="instagram">
+    <h2>From Instagram</h2>
+    <!-- SnapWidget -->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/1093371" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;" title="Follow @shaancre8sart for more artworks and updates"></iframe>
+</section>
 
-  <script src="aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+        <a href="https://wa.me/yourwhatsapplink">WhatsApp</a>
+        <a href="https://www.instagram.com/shaancre8sart/">Instagram DM</a>
+        <a href="mailto:your-email@example.com">Email</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 ShaanCre8sArt</p>
+</footer>
+
 </body>
 </html>
